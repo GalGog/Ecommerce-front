@@ -48,7 +48,8 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) => {
 
     const showCheckout = () => {
         return isAuthenticated() ? (
-            <div>{showDropIn()}</div>
+   //         <div>{showDropIn()}</div>
+            <button className="btn btn-success">Checkout</button>
         ) : (
             <Link to="/signin">
                 <button className="btn btn-primary">Sign in to checkout</button>
