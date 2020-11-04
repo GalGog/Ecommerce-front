@@ -4,7 +4,7 @@ import { emptyCart } from './cartHelpers';
 import Card from './Card';
 import { isAuthenticated } from '../auth';
 import { Link } from 'react-router-dom';
-// import "braintree-web"; // not using this package
+import "braintree-web"; // not using this package
 import DropIn from 'braintree-web-drop-in-react';
 
 const Checkout = ({ products, setRun = f => f, run = undefined }) => {
@@ -48,8 +48,7 @@ const Checkout = ({ products, setRun = f => f, run = undefined }) => {
 
     const showCheckout = () => {
         return isAuthenticated() ? (
-   //         <div>{showDropIn()}</div>
-            <button className="btn btn-success">Checkout</button>
+            <div>{showDropIn()}</div>
         ) : (
             <Link to="/signin">
                 <button className="btn btn-primary">Sign in to checkout</button>
