@@ -34,7 +34,7 @@ const Routes = () => {
                 <Route path="/cart" exact component={Cart} />
                 <AdminRoute path="/admin/orders" exact component={Orders} />
                 <PrivateRoute path="/profile/:userId" exact component={Profile} />
-                <PrivateRoute path="/admin/products" exact component={ManageProducts} />
+                <AdminRoute path="/admin/products" exact component={ManageProducts} />
                 <AdminRoute path="/admin/product/update/:productId" exact component={UpdateProduct} />
                 <AdminRoute path="/admin/category/update/:categoryId" exact component={UpdateCategory} />
             </Switch>
