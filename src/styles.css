@@ -23,7 +23,7 @@
  */
 
 .name {
-    background: indigo;
+    background: #778899;
     color: #fff;
     font-weight: bold;
 }
@@ -73,7 +73,7 @@
 .jumbotron {
     height: 180px;
     color: #fff;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #C0C0C0, #A9A9A9, #808080, #696969);
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
